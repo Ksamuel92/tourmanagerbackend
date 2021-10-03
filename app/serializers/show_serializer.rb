@@ -1,7 +1,7 @@
 class ShowSerializer < ActiveModel::Serializer
   attributes :id, :venue, :promoter, :email, :guarantee, :advanced, :merch, :loadin
+  belongs_to :user
 end
-
 
 # create_table "shows", force: :cascade do |t|
 #     t.string "venue"
