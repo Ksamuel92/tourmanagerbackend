@@ -1,5 +1,5 @@
 class ShowSerializer < ActiveModel::Serializer
-  attributes :id, :venue, :promoter, :email, :guarantee, :advanced, :merch, :loadin
+  attributes :id, :venue, :promoter, :email, :guarantee, :advanced, :merch, :loadin, :city
   belongs_to :user
 end
 
