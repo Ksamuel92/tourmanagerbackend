@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2021_10_05_144816) do
     t.integer "guarantee"
     t.boolean "advanced"
     t.integer "merch"
-    t.time "loadin"
+    t.datetime "loadin"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id", null: false
