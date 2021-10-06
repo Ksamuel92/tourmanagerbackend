@@ -14,7 +14,7 @@ show = user.shows.create(
   guarantee: '1500',
   advanced: 'true',
   merch: '2000',
-  loadin: '3:30',
+  loadin: '2000-01-01T22:15:30.000Z',
   date: '2024-03-30'
 )
 show = user.shows.create(
@@ -25,7 +25,7 @@ show = user.shows.create(
   guarantee: '1200',
   advanced: 'true',
   merch: '2000',
-  loadin: '3:30',
+  loadin: '2000-01-01T22:15:30.000Z',
   date: '2024-03-30'
 )
 show = user.shows.create(
@@ -36,6 +36,6 @@ show = user.shows.create(
   guarantee: '1500',
   advanced: 'false',
   merch: '2000',
-  loadin: '3:30',
+  loadin: '2000-01-01T22:12:00.000Z',
   date: '2024-03-30'
 )
