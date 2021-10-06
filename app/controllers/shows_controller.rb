@@ -8,10 +8,16 @@ class ShowsController < ApplicationController
     # byebug
     user = User.find_by(email: params[:user][:email])
     # byebug
-    show = user.shows.create(show_params)
+    show = user.shows.build(show_params)
     show.save
-    render json: show
+    if show.save
+      render json: show
+    else
+      render 'There was an error creating the show'
+    end
   end
+
+  def update; end
 
   private
 
