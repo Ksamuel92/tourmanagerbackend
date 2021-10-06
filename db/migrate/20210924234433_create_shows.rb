@@ -7,7 +7,8 @@ class CreateShows < ActiveRecord::Migration[6.1]
       t.integer :guarantee
       t.boolean :advanced
       t.integer :merch
-      t.datetime :loadin
+      t.time :loadin
+      t.date :date
 
       t.timestamps
     end

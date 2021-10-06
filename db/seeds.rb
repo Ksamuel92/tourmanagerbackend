@@ -14,7 +14,8 @@ show = user.shows.create(
   guarantee: '1500',
   advanced: 'true',
   merch: '2000',
-  loadin: '3:30'
+  loadin: '3:30',
+  date: '2024-03-30'
 )
 show = user.shows.create(
   venue: "Emo's",
@@ -24,7 +25,8 @@ show = user.shows.create(
   guarantee: '1200',
   advanced: 'true',
   merch: '2000',
-  loadin: '3:30'
+  loadin: '3:30',
+  date: '2024-03-30'
 )
 show = user.shows.create(
   venue: 'Three Links',
@@ -34,5 +36,6 @@ show = user.shows.create(
   guarantee: '1500',
   advanced: 'false',
   merch: '2000',
-  loadin: '3:30'
+  loadin: '3:30',
+  date: '2024-03-30'
 )
