@@ -17,10 +17,10 @@ class ShowsController < ApplicationController
     end
   end
 
-  def show
-    show = Show.find_by(id: params[:id])
-    render json: show
-  end
+  # def show
+  #   show = Show.find_by(id: params[:id])
+  #   render json: show
+  # end
 
   def update
     show = Show.find_by(id: params[:id])
