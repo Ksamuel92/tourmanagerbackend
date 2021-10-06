@@ -17,12 +17,26 @@ class ShowsController < ApplicationController
     end
   end
 
-  def update; end
+  def show
+    show = Show.find_by(id: params[:id])
+    render json: show
+  end
+
+  def update
+    show = Show.find_by(id: params[:id])
+    # byebug
+    if show.update(show_params)
+      render json: show
+    else
+      render json: { error: 'There was an error updating the show' }
+    end
+  end
 
   private
 
   def show_params
-    params.require(:show).permit(:venue, :promoter, :email, :city, :guarantee, :advanced, :user, :merch, :loadin)
+    params.require(:show).permit(:id, :venue, :date, :promoter, :email, :city, :guarantee, :advanced, :user, :merch,
+                                 :loadin)
   end
 
   def user_params
