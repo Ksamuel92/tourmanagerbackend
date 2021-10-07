@@ -32,6 +32,15 @@ class ShowsController < ApplicationController
     end
   end
 
+  def destroy
+    show = Show.find_by(id: params[:id])
+    if show.destroy
+      render json: { message: 'The show was successfully deleted' }
+    else
+      render json: { message: 'There was an error deleting the show' }
+    end
+  end
+
   private
 
   def show_params
