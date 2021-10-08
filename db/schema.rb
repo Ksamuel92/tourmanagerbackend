@@ -10,33 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_05_144816) do
-
+ActiveRecord::Schema.define(version: 20_211_005_144_816) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension 'plpgsql'
 
-  create_table "shows", force: :cascade do |t|
-    t.string "venue"
-    t.string "promoter"
-    t.string "email"
-    t.integer "guarantee"
-    t.boolean "advanced"
-    t.integer "merch"
-    t.time "loadin"
-    t.date "date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.bigint "user_id", null: false
-    t.string "city"
-    t.index ["user_id"], name: "index_shows_on_user_id"
+  create_table 'shows', force: :cascade do |t|
+    t.string 'venue'
+    t.string 'promoter'
+    t.string 'email'
+    t.integer 'guarantee'
+    t.boolean 'advanced'
+    t.integer 'merch'
+    t.time 'loadin'
+    t.date 'date'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.bigint 'user_id', null: false
+    t.string 'city'
+    t.index ['user_id'], name: 'index_shows_on_user_id'
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "email"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "name"
+  create_table 'users', force: :cascade do |t|
+    t.string 'email'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.string 'name'
   end
 
-  add_foreign_key "shows", "users"
+  add_foreign_key 'shows', 'users'
 end

@@ -13,7 +13,7 @@ class ShowsController < ApplicationController
     if show.save
       render json: show
     else
-      render 'There was an error creating the show'
+      render json: 'There was an error creating the show'
     end
   end
 
