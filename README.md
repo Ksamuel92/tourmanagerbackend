@@ -1,6 +1,6 @@
 # README
 ## TourManager
-This repository is the backend for the TourManager single-page application. TourManager is designed to help tour managers log and organize their shows, giving them a quick overview of the day to come in a convenient, dynamic way. You may find the frontend repository for TourManager [here](https://github.com/Ksamuel92/tourmanagerfrontend).
+This repository is the backend for the TourManager single-page application. TourManager is designed to help tour managers log and organize their shows, giving them a quick overview of the day to come in a convenient, dynamic way. You may find the frontend repository for TourManager [here](https://github.com/Ksamuel92/tourmanagerfrontend). You will need to clone both repositories to use the application.
 
 ## Prerequisites
 
